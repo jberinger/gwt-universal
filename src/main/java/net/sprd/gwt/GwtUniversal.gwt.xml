@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.7.0//EN" "http://www.gwtproject.org/doctype/2.7.0/gwt-module.dtd">
+<module>
+    <inherits name="com.google.gwt.user.User" />
+    
+    <inherits   name="elemental2.core.Core" />
+    
+    <inherits name="elemental2.dom.Dom" />
+    
+    <replace-with class="net.sprd.gwt.client.dom.GwtuDomClient">
+        <when-type-is class="net.sprd.gwt.shared.dom.GwtuDom"/>
+    </replace-with>
+
+    <source path="client" />
+    <source path="shared" />
+</module>
